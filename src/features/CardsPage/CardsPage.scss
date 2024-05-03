@@ -1,0 +1,49 @@
+.cards-page {
+  padding: 20px;
+  background-color: #fafafa;
+  min-height: 100vh;
+
+  .title {
+    margin: 10px 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h1 {
+      margin: 0;
+    }
+  }
+
+  .form {
+    margin: 20px 0;
+    display: flex;
+
+    .input-container {
+      input {
+        height: 38px;
+        min-width: 150px;
+        margin-right: 20px;
+        padding: 0 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        outline: none;
+
+        &[type="number"]::-webkit-inner-spin-button,
+        &[type="number"]::-webkit-outer-spin-button {
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
+          margin: 0;
+        }
+
+        &.input-error {
+          border-color: #d8000c;
+        }
+      }
+      .error {
+        color: #d8000c;
+        margin: 10px 0;
+        font-size: 12px;
+      }
+    }
+  }
+}
